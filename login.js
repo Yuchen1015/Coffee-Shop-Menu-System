@@ -1,6 +1,9 @@
 function logFunction(x) {
   x.classList.toggle("in");
 }
+function goBack() {
+  window.history.back();
+}
 
 // Login page
 

@@ -10,50 +10,17 @@
   --LogPageOverBG: #264653;
   --LogPageOverText: aliceblue;
 }
-/* .logContainer {
-  width: 770px;
-  height: 480px;
-  margin: auto;
-  position: relative;
-  transform: scale(var(--scale, 1));
-  top: 160px;
-  overflow: hidden;
-  background-image: var(--logPageBG);
-  border-radius: 10px;
-  box-shadow: 3px 3px 5px #004346;
-} */
+
 
 .logContainer {
   width: 100vw;
   height: 100vh;
-  /* margin: auto;
-  position: relative; */
-  /* transform: translate(var(--translate, -900px, calc(100vh - 450px))) scale(var(--scale, 1)); */
-  /* top: 200px; */
+
   overflow: hidden;
   background-image: var(--LogPageBG);
-  /* border-radius: 10px; */
-  /* box-shadow: 4px 4px 5px #212a2b; */
-  /* transition: transform 0.6s cubic-bezier(0.42, 0, 0, 0.94); */
+
 }
 
-/* .pupUp .logContainer {
-  animation: pupUP 0.6s cubic-bezier(0.42, 0, 0, 0.94) forwards;
-} */
-
-/* @keyframes pupUP {
-  from {
-    transform: translate(var(--translate, -900px, calc(100vh - 450px))) scale(var(--scale, 0));
-  }
-
-  to {
-    transform: translate(var(--translate, 0, 0)) scale(var(--scale, 1));
-  }
-} */
-
-/* .logContainer.pupUp {
-  filter: blur(2px);
-} */
 
 .logContainer .left,
 .right,
@@ -64,7 +31,7 @@
   flex-direction: column;
   width: 50%;
   height: 100%;
-  /* padding: 0 50px; */
+
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -135,21 +102,6 @@
   transition: all 0.2s ease;
 }
 
-/* .forget::after {
-  content: "";
-  display: block;
-  position: relative;
-  bottom: -4px;
-  height: 2px;
-  width: 175px;
-  background-color: #000;
-  transform: scaleX(0);
-  transition: transform 0.1s ease;
-}
-
-.forget:hover::after {
-  transform: scaleX(1);
-} */
 
 .forget:hover {
   box-shadow: 1px 1px 3px #365546;
@@ -185,14 +137,6 @@
   box-shadow: 1px 1px 3px #6c9194;
 }
 
-/* .logSign:hover,
-.switch:hover {
-  transform: scale(1.05);
-}
-.logSign:active,
-.switch:active {
-  transform: scale(0.95);
-} */
 
 .logContainer button.logSign {
   background-color: var(--LogPageBtn);
@@ -258,10 +202,7 @@
   transform: translateX(25%);
 }
 
-/* .left,
-.right {
-  background-color: antiquewhite;
-} */
+
 
 .left {
   z-index: 2;
@@ -322,3 +263,12 @@
 .logContainer.right-panel-active .closeBtn {
   transform: rotateY(180deg);
 }
+
+.backBtn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 100; 
+  font-size: 2em;
+}
+
