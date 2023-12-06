@@ -11,6 +11,7 @@ const signupBtn = document.getElementById("signup");
 const signinBtn = document.getElementById("signin");
 const main = document.getElementById("main");
 
+
 signupBtn.addEventListener("click", () => {
   main.classList.add("right-panel-active");
 });
