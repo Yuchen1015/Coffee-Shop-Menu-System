@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payment.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <title>Crasy Pay</title>
+  </head>
+  <body>
+    <header class="payment-header">
+      <img alt="logo" src="public/playground_assets/image%401x-1400w.png" style="height: 96px" class="menu-image" />
+      <div class="nav-menu">
+        <div class="navTXT">Navigation<i class="bx bx-chevron-right"></i></div>
+        <div class="navBar">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="rewards.html">Rewards</a>
+          <a href="contact-us.html">Contact Us</a>
+        </div>
+      </div>
+    </header>
+    <div class="PaymentContainer">
+      <h1>Crasy Payment</h1>
+
+      <div class="walkInSection" id="walkInSection">
+        <div class="walkIn headerContainer">
+          <h2>Walk-in</h2>
+          <div class="BG"><i class="bx bxs-store"></i></div>
+        </div>
+        <div class="walkInContent">
+          <h3>Walk-in</h3>
+          <div class="closeBtn" id="driveThClose"><i class="bx bx-message-square-x"></i></div>
+          <div class="info">
+            <h4>Info</h4>
+            <input type="text" name="fn" id="fn" placeholder="First Name" />
+            <input type="text" name="ln" id="ln" placeholder="Last Name" />
+            <input type="text" name="email" id="email" placeholder="Email" />
+            <input type="text" name="PN" id="PN" placeholder="Phone Number" />
+          </div>
+          <div class="location">
+            <label for="map">Where you want to reach at?</label>
+            <select name="map" id="mapSelect" class="mapSelect">
+              <option value>Arkansas</option>
+              <optgroup label="Russellville">
+                <option value="0">1950 N Arkansas Ave</option>
+                <option value="1">2001 N Parker Rd</option>
+              </optgroup>
+              <optgroup label="Dardanelle">
+                <option value="2">410 Union St</option>
+              </optgroup>
+            </select>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1678509.1479966373!2d-93.45054349493151!3d34.74707300888163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d29e3f743f2761%3A0xa405693effdfd2d0!2sArkansas%2C%20USA!5e0!3m2!1sen!2sca!4v1682207678890!5m2!1sen!2sca"
+              class="menu-iframe"
+              id="map"></iframe>
+          </div>
+          <div class="buttonContainer">
+            <button class="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="driveThSection" id="driveThSection">
+        <div class="driveTh headerContainer">
+          <h2>Drive-Thru</h2>
+          <div class="BG"><i class="bx bxs-car-crash"></i></div>
+        </div>
+        <div class="driveThContent">
+          <h3>Drive-Thru</h3>
+          <div class="closeBtn" id="driveThClose"><i class="bx bx-message-square-x"></i></div>
+          <div class="info">
+            <h4>Info</h4>
+            <input type="text" name="fn" id="fn" placeholder="First Name" />
+            <input type="text" name="ln" id="ln" placeholder="Last Name" />
+            <input type="text" name="email" id="email" placeholder="Email" />
+            <input type="text" name="PN" id="PN" placeholder="Phone Number" />
+          </div>
+          <div class="location">
+            <label for="map">Where you want to reach at?</label>
+            <select name="map" id="mapSelect" class="mapSelect">
+              <option value>Arkansas</option>
+              <optgroup label="Russellville">
+                <option value="0">1950 N Arkansas Ave</option>
+                <option value="1">2001 N Parker Rd</option>
+              </optgroup>
+              <optgroup label="Dardanelle">
+                <option value="2">410 Union St</option>
+              </optgroup>
+            </select>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1678509.1479966373!2d-93.45054349493151!3d34.74707300888163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87d29e3f743f2761%3A0xa405693effdfd2d0!2sArkansas%2C%20USA!5e0!3m2!1sen!2sca!4v1682207678890!5m2!1sen!2sca"
+              class="menu-iframe"
+              id="map"></iframe>
+          </div>
+          <div class="buttonContainer">
+            <button class="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="payment.js"></script>
+  </body>
+</html>
