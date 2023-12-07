@@ -263,39 +263,40 @@ registerBtn.addEventListener("click", () => {
   registerSide.classList.add("right-panel-active");
   loginPage.classList.toggle("pupUp");
 });
+
 LoginBtn.addEventListener("click", () => {
   registerSide.classList.remove("right-panel-active");
   loginPage.classList.toggle("pupUp");
 });
+
 closeBtn.addEventListener("click", () => {
   loginPage.classList.toggle("pupUp");
 });
 
 var purchasepass = document.querySelector(".btn-purchase");
 purchasepass.addEventListener("click", () => {
-    // Get the cart data
-    var cart = JSON.parse(localStorage.getItem('cart'));
+  // Get the cart data
+  var cart = JSON.parse(localStorage.getItem("cart"));
 
-    // Send the cart data to the PHP page using AJAX
-    $.ajax({
-        type: 'POST',
-        url: 'menu.php',
-        data: { cart: cart },
-        success: function (response) {
-            // Display the response from the PHP page
-            alert(response);
-        },
-        error: function (xhr, status, error) {
-            // Display an error message if the AJAX request fails
-            alert('Error: ' + error);
-        }
-    });
+  // Send the cart data to the PHP page using AJAX
+  $.ajax({
+    type: "POST",
+    url: "menu.php",
+    data: {cart: cart},
+    success: function (response) {
+      // Display the response from the PHP page
+      alert(response);
+    },
+    error: function (xhr, status, error) {
+      // Display an error message if the AJAX request fails
+      alert("Error: " + error);
+    },
+  });
 });
 
 var purchasePage = document.querySelector(".btn-purchase");
 purchasePage.addEventListener("click", () => {
-    var message = "Order Sent";
-    alert(message);
-    window.location = "payment.html";
+  var message = "Order Sent";
+  alert(message);
+  window.location = "payment.html";
 });
-
