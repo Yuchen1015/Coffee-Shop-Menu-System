@@ -729,31 +729,10 @@ option {
 }
 
 .loginContainer {
-  position: fixed;
+  display: none;
+  position: absolute;
   z-index: 20;
   min-width: 680px;
-}
-
-.loginPage {
-  /* display: none; */
-  min-width: 680px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 10px #241d15;
-  transform: translateY(var(--translate, -400px)) translateX(var(--translate, 350px)) scale(var(--scale, 0));
-}
-
-.home-container03.pupUp .loginPage {
-  animation: LoginPageShow 0.6s 0.5s cubic-bezier(0.42, 0, 0, 0.94) forwards;
-}
-
-@keyframes LoginPageShow {
-  from {
-    transform: translateY(var(--translate, -400px)) translateX(var(--translate, 350px)) scale(var(--scale, 0));
-  }
-
-  to {
-    transform: translateY(var(--translate, 0px)) translateX(var(--translate, 0px)) scale(var(--scale, 1));
-  }
 }
 
 .loginPage {
@@ -764,8 +743,11 @@ option {
   transform: translateY(var(--translate, -400px)) translateX(var(--translate, 350px)) scale(var(--scale, 0.1));
 }
 
-.menu-container03.pupUp .loginPage {
+.home-container03.pupUp .loginPage {
   animation: LoginPageShow 0.6s cubic-bezier(0.42, 0, 0, 0.94) forwards;
+}
+.home-container03.pupUp .loginContainer {
+  display: block;
 }
 
 @keyframes LoginPageShow {
