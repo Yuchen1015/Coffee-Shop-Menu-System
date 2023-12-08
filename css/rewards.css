@@ -1,3 +1,4 @@
+
 .rewards-container {
   width: 100%;
   display: flex;
@@ -28,9 +29,9 @@
   width: auto;
   height: auto;
   display: flex;
-  position: relative;
   align-items: center;
   flex-direction: row;
+  
 }
 .rewards-btn-group {
   display: flex;
@@ -448,6 +449,57 @@
     margin-left: var(--dl-space-space-unit);
     margin-right: var(--dl-space-space-unit);
   }
+}
+@media screen and (max-width: 1490px) {
+  .elseContainer .shopCartContainer {
+    right: calc((100vw - 745px) / 2);
+  }
+}
+
+.elseContainer.pupUp .shopCartContainer {
+  animation: pupUp 0.6s cubic-bezier(0.42, 0, 0, 0.94) forwards;
+}
+@keyframes pupUp {
+  from {
+    transform: translate(var(--translate, 900px, 0px)) scale(var(--scale, 0));
+  }
+
+  to {
+    transform: translate(var(--translate, 0, 0)) scale(var(--scale, 1));
+  }
+}
+.rewards-container03 {
+  gap: var(--dl-space-space-twounits);
+  flex: 0 0 auto;
+  width: 98%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin-top: 160px;
+  padding-top: var(--dl-space-space-oneandhalfunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-oneandhalfunits);
+  background-color: #6b543a;
+}
+.loginContainer {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  min-width: 680px;
+}
+.rewards-container03.pupUp .loginContainer {
+  display: block;
+}
+
+.loginPage {
+  /* display: none; */
+  min-width: 680px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px #241d15;
+  transform: translateY(var(--translate, -400px)) translateX(var(--translate, 350px)) scale(var(--scale, 0.1));
+}
+.rewards-container03.pupUp .loginPage {
+  animation: LoginPageShow 0.6s cubic-bezier(0.42, 0, 0, 0.94) forwards;
 }
 @media(max-width: 479px) {
   .rewards-header {
